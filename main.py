@@ -16,9 +16,10 @@ n_head = 6
 n_layer = 6
 dropout = 0.2
 
+text_path = 'PUT_THE_PATH_TO_TXT_FILE_HERE'
 
 
-with open('scifi.txt', 'r', encoding='utf-8') as f:
+with open(text_path, 'r', encoding='utf-8') as f:
     text = f.read()
 
 chars = sorted(list(set(text)))
